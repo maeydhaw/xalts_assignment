@@ -17,7 +17,7 @@ resource "aws_instance" "myrestapiinstance" {
               yum update -y
               yum install -y docker
               service docker start
-              docker run -d -p 80:80 my-rest-api
+              docker run -d -p 5000:5000 my-rest-api
               EOF
 }
 
@@ -26,8 +26,8 @@ resource "aws_security_group" "myrestapisg" {
   description = "Allow inbound traffic on port 80"
 
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 5000
+    to_port     = 5000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"] # Adjust to restrict access as needed
   }
