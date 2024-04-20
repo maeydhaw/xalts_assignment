@@ -38,3 +38,36 @@ If you hit the same URL using GET call in Postman app, it will show the followin
 
 ![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/b87cf441-41ef-422e-b49d-53a26d4b1aa8)
 
+## Running the Terraform file
+
+# Terraform AWS Example
+
+This Terraform configuration file provisions an AWS EC2 instance and runs a Dockerized REST API on it.
+
+## Prerequisites
+
+- Terraform installed on your machine
+- AWS CLI configured with access key and secret key
+
+## Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-repo.git
+cd xalts_assignment
+```
+2. Initialize Terraform
+```bash
+terraform init
+```
+3. Review and apply the Terraform configuration:
+```bash
+terraform plan
+terraform apply
+```
+5. Access your REST API:Once the Terraform apply is successful, you can access your REST API at
+```bash
+http://<ec2-public-ip>:5000
+```
+6. Replace **your_access_key_id** and **your_secret_access_key** with your AWS access key ID and secret access key respectively. Adjust the region (us-west-2), AMI ID (ami-0c55b159cbfafe1f0), and any other parameters as needed for your setup.
