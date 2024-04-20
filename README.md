@@ -38,9 +38,7 @@ If you hit the same URL using GET call in Postman app, it will show the followin
 
 ![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/b87cf441-41ef-422e-b49d-53a26d4b1aa8)
 
-## Running the Terraform file
-
-# Terraform AWS Example
+# Running the Terraform file
 
 This Terraform configuration file provisions an AWS EC2 instance and runs a Dockerized REST API on it.
 
