@@ -29,3 +29,10 @@ It would look something like this
    It would look like this
 
 ![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/8be3eb9c-9c71-4d40-8024-90ad9d273b5b)
+
+# Postman - Optional
+
+If you hit the same URL using GET call in Postman app, it will show the following results.
+
+![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/b87cf441-41ef-422e-b49d-53a26d4b1aa8)
+
