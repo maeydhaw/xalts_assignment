@@ -1,4 +1,4 @@
-# Running in Local - Details
+
 
 ## Prerequisites
 
@@ -6,6 +6,8 @@
 2) AWS account created
 3) Terraform installed in your system
 4) Access key and Secret key to create the infrastructure
+
+## Running in Local - Details
 
 1) Clone the repository in local
 2) Go inside the folder RESTAPI
