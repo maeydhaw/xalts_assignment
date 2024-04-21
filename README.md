@@ -68,7 +68,9 @@ http://<ec2-public-ip>:5000
 ```
 6. Replace **your_access_key_id** and **your_secret_access_key** with your AWS access key ID and secret access key respectively. Adjust the region (us-west-2), AMI ID (ami-XXXXXXXXXXX), and any other parameters as needed for your setup.
 
-## Running in AWS - Details
+# Running in AWS - Details
+
+Once you run the terraform script in local, this is how the result is going to look like
 
 ## AWS Instance and Security Group
 
