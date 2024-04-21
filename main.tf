@@ -15,8 +15,11 @@ resource "aws_instance" "myrestapiinstance" {
   user_data = <<-EOF
               #!/bin/bash
               yum update -y
-              yum install -y docker
+              yum install -y git docker
               service docker start
+              git clone https://github.com/maeydhaw/xalts_assignment.git
+              cd xalts_assignment
+              docker build -t my-rest-api .
               docker run -d -p 5000:5000 my-rest-api
               EOF
 }
