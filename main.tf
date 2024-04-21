@@ -1,12 +1,13 @@
 provider "aws" {
   region     = "us-west-2"
-  access_key = "your_access_key_id"
-  secret_key = "your_secret_access_key"
+  access_key = "A-PleaseUseYoursAK"
+  secret_key = "A/PleaseUseYoursSK"
 }
 
 resource "aws_instance" "myrestapiinstance" {
   ami           = "ami-0663b059c6536cac8"
   instance_type = "t2.micro"
+  security_groups = [aws_security_group.myrestapisg.name]
 
   tags = {
     Name = "my-rest-api-instance"
@@ -21,6 +22,11 @@ resource "aws_instance" "myrestapiinstance" {
               cd xalts_assignment
               docker build -t my-rest-api .
               docker run -d -p 5000:5000 my-rest-api
+              
+              # Allow traffic on port 5000 using firewalld (CentOS/RHEL 7+)
+              systemctl start firewalld
+              firewall-cmd --zone=public --add-port=5000/tcp --permanent
+              firewall-cmd --reload
               EOF
 }
 
