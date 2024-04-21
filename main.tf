@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "myrestapiinstance" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-0663b059c6536cac8"
   instance_type = "t2.micro"
 
   tags = {
