@@ -68,4 +68,15 @@ terraform apply
 ```bash
 http://<ec2-public-ip>:5000
 ```
-6. Replace **your_access_key_id** and **your_secret_access_key** with your AWS access key ID and secret access key respectively. Adjust the region (us-west-2), AMI ID (ami-0c55b159cbfafe1f0), and any other parameters as needed for your setup.
+6. Replace **your_access_key_id** and **your_secret_access_key** with your AWS access key ID and secret access key respectively. Adjust the region (us-west-2), AMI ID (ami-XXXXXXXXXXX), and any other parameters as needed for your setup.
+
+# After running terraform scripts
+
+# AWS Instance and Security Group
+
+![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/42c4d41e-79e3-4f80-8e7c-97041bbbf4b3)
+
+# Live App from EC2 instance
+
+![image](https://github.com/maeydhaw/xalts_assignment/assets/88104259/b4a0aeec-3a6c-472f-a24e-73efe4352611)
+
